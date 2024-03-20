@@ -1,0 +1,33 @@
+.container{
+    margin: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+th{
+    background-color: #f2f2f2;
+}
+tfoot input{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+td input{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+#currentTime{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+td select{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}

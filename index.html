@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Generator</title>
+    <link rel="Stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bill Generator</h1>
+        <!--Display Current time-->
+        <div id="currentTime"></div>
+        <table id="billTable">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                    <select id="dropdown">
+                        <option value="அப்பளம் 100gm">அப்பளம் 100gm</option>
+                        <option value="அப்பளம் 120gm">அப்பளம் 120gm</option>
+                        <option value="அப்பளம் 50g">அப்பளம் 50g</option>
+                        <option value="அப்பளம் 70g">அப்பளம் 70g</option>
+                        <option value="அவல்/Flattened Rice">அவல்/Flattened Rice</option>
+                        <option value="இட்லி பொடி 20g">இட்லி பொடி 20g</option>
+                        <option value="இட்லி பொடி 50g">இட்லி பொடி 50g</option>
+                        <option value="உடைத்த உளுத்தம் பருப்பு/Broken urad dal">உடைத்த உளுத்தம் பருப்பு/Broken urad dal</option>
+                        <option value="உப்புமா சேமியா">உப்புமா சேமியா</option>
+                        <option value="உருளைக்கிழங்கு">உருளைக்கிழங்கு</option>
+                        <option value="உளுத்தம்பருப்பு">உளுத்தம்பருப்பு</option>
+                        <option value="கடலை மாவு 500g">கடலை மாவு 500g</option>
+                        <option value="கடலைப்பருப்பு/Peanut">கடலைப்பருப்பு/Peanut</option>
+                        <option value="8கடுகு/Mustard">கடுகு/Mustard</option>
+                        <option value="கறி மசால் பொடி 20g">கறி மசால் பொடி 20g</option>
+                        <option value="கறி மசால் பொடி 50g">கறி மசால் பொடி 50g</option>
+                        <option value="கொள்ளு/Gram">கொள்ளு/Gram</option>
+                        <option value="கோதுமை மாவு 500g">கோதுமை மாவு 500g</option>
+                        <option value="சர்க்கரை">சர்க்கரை</option>
+                        <option value="சமையல் எண்ணெய்/Edible Oil 50ml">சமையல் எண்ணெய்/Edible Oil 50ml</option>
+                        <option value="சமையல் எண்ணெய்/Edible Oil 100ml">சமையல் எண்ணெய்/Edible Oil 100ml</option>
+                        <option value="சமையல் எண்ணெய்/Edible Oil 200ml">சமையல் எண்ணெய்/Edible Oil 200ml</option>
+                        <option value="சமையல் எண்ணெய்/Edible Oil 500ml">சமையல் எண்ணெய்/Edible Oil 500ml</option>
+                        <option value="சாம்பார் பொடி 50g">சாம்பார் பொடி 50g</option>
+                        <option value="சாம்பார் பொடி 50g">சாம்பார் பொடி 50g</option>
+                        <option value="சிக்கன் மசாலா 20g">சிக்கன் மசாலா 20g</option>
+                        <option value="சிக்கன் மசாலா 50g">சிக்கன் மசாலா 50g</option>
+                        <option value="சின்ன மீல் மேக்கர்/Soya Chunks Mini">சின்ன மீல் மேக்கர்/Soya Chunks Mini</option>
+                        <option value="சீரகம்/Cumin">சீரகம்/Cumin</option>
+                        <option value="சோம்பு/Anise">சோம்பு/Anise</option>
+                        <option value="ஜவ்வரிசி/Sago">ஜவ்வரிசி/Sago</option>
+                        <option value="தக்காளி">தக்காளி</option>
+                        <option value="தட்டய்பயிரு">தட்டய்பயிரு</option>
+                        <option value="திராட்சை/dry grapes">திராட்சை/dry grapes</option>
+                        <option value="துவரம் பருப்பு">துவரம் பருப்பு</option>
+                        <option value="பச்சரிசி">பச்சரிசி</option>
+                        <option value="பச்சைபயிரு">பச்சைபயிரு</option>
+                        <option value="பஜ்ஜி போண்டா மாவு 200g">பஜ்ஜி போண்டா மாவு 200g</option>
+                        <option value="பட்டை">பட்டை</option>
+                        <option value="பாசிப்பருப்பு">பாசிப்பருப்பு</option>
+                        <option value="பிரியாணி மசாலா 20g">பிரியாணி மசாலா 20g</option>
+                        <option value="புளி">புளி</option>
+                        <option value="பெரிய மீல் மேக்கர்/Soya Chunks">பெரிய மீல் மேக்கர்/Soya Chunks</option>
+                        <option value="பெருங்காயம் 10gm">பெருங்காயம் 10gm</option>
+                        <option value="பெருங்காயம் 20gm">பெருங்காயம் 20gm</option>
+                        <option value="பொட்டுகடலை">பொட்டுகடலை</option>
+                        <option value="நிலக்கடலை எண்ணெய்/Groundnut Oil 100ml">நிலக்கடலை எண்ணெய்/Groundnut Oil 100ml</option>
+                        <option value="நிலக்கடலை எண்ணெய்/Groundnut Oil 200ml">நிலக்கடலை எண்ணெய்/Groundnut Oil 200ml</option>
+                        <option value="நிலக்கடலை எண்ணெய்/Groundnut Oil 500ml">நிலக்கடலை எண்ணெய்/Groundnut Oil 500ml</option>
+                        <option value="மஞ்சள் தூள்/Turmeric Powder 20g">மஞ்சள் தூள்/Turmeric Powder 20g</option>
+                        <option value="மஞ்சள் தூள்/Turmeric Powder 50g">மஞ்சள் தூள்/Turmeric Powder 50g</option>
+                        <option value="மட்டன் மசாலா 20g">மட்டன் மசாலா 20g</option>
+                        <option value="மட்டன் மசாலா 50g">மட்டன் மசாலா 50g</option>
+                        <option value="மல்லி">மல்லி</option>
+                        <option value="மல்லி தூள் 20g">மல்லி தூள் 20g</option>
+                        <option value="மல்லி தூள் 50g">மல்லி தூள் 50g</option>
+                        <option value="மிளகாய் தூள் 20g">மிளகாய் தூள் 20g</option>
+                        <option value="மிளகாய் தூள் 50g">மிளகாய் தூள் 50g</option>
+                        <option value="மிளகு/Pepper">மிளகு/Pepper</option>
+                        <option value="முந்திரி/Cashew">முந்திரி/Cashew</option>
+                        <option value="மைதா மாவு 500g">மைதா மாவு 500g</option>
+                        <option value="ரசப்பொடி 20g">ரசப்பொடி 20g</option>
+                        <option value="ரவை 200g">ரவை 200g</option>
+                        <option value="ரவை 250g">ரவை 250g</option>
+                        <option value="ரவை 500g">ரவை 500g</option>
+                        <option value="வரமிளகாய்/Cayenne pepper">வரமிளகாய்/Cayenne pepper</option>
+                        <option value="விளக்கெண்ணெய்/Lamp Oil 100ml">விளக்கெண்ணெய்/Lamp Oil 100ml</option>
+                        <option value="விளக்கெண்ணெய்/Lamp Oil 200ml">விளக்கெண்ணெய்/Lamp Oil 200ml</option>
+                        <option value="விளக்கெண்ணெய்/Lamp Oil 500ml">விளக்கெண்ணெய்/Lamp Oil 500ml</option>
+                        <option value="வெங்காயம்">வெங்காயம்</option>
+                        <option value="வெந்தயம்/Fenugreek">வெந்தயம்/Fenugreek</option>
+                        <option value="வெல்லம்/Jaggery">வெல்லம்/Jaggery</option>
+                        <option value="சர்க்கரை">சர்க்கரை</option>
+                        <option value="சர்க்கரை">சர்க்கரை</option>
+                    </select>
+                    </td>
+                    <td><input type="number"></td>
+                    <td><div id="price"></div></td>
+                    <td><input type="number"></td>
+                    <td></td>
+                    <td>Delete</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total</td>
+                    <td><input type="text" id="overallTotal" readonly></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4">Overall Discount</td>
+                    <td><input type="text" id="overallDiscount"></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
